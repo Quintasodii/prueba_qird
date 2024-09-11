@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Text, StyleSheet, View, Image, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import appFirebase from '../credenciales';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-const auth = getAuth(appFirebase);
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 export default function Register(props) {
   const [email, setEmail] = useState('');
